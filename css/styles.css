@@ -18,7 +18,7 @@ html {
 .phone__number,
 nav,
 .nav__list,
-.header-2,
+.header-bottom,
 .categories-nav__item,
 .cart-btn,
 .wrapper,
@@ -38,10 +38,10 @@ section {
 header {
   font-family: "Proxima Nova Bold";
 }
-.header-1__wrap {
+.header-top__wrap {
   border-bottom: 1px solid #000;
 }
-.header-1 {
+.header-top {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -133,7 +133,7 @@ header {
   color: var(--accent-color);
 }
 
-.header-2 {
+.header-bottom {
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
