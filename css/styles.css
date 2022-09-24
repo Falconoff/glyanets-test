@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .container {
   margin: 0 51px;
 }
@@ -38,9 +39,11 @@ section {
 header {
   font-family: "Proxima Nova Bold";
 }
+
 .header-top__wrap {
   border-bottom: 1px solid #000;
 }
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -63,18 +66,27 @@ header {
 
 .socials__icon {
   fill: var(--main-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
 
 .phone__number {
   padding: 8px;
   gap: 5px;
-
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .phone__icon {
   fill: none;
   stroke: var(--main-color);
+  -o-transition: stroke var(--trans-duration) var(--timing-function);
+  -moz-transition: stroke var(--trans-duration) var(--timing-function);
+  -webkit-transition: stroke var(--trans-duration) var(--timing-function);
   transition: stroke var(--trans-duration) var(--timing-function);
 }
 
@@ -82,6 +94,7 @@ header {
 .phone__number:focus .phone__icon {
   stroke: var(--accent-color);
 }
+
 .phone__number:hover,
 .phone__number:focus {
   color: var(--accent-color);
@@ -90,6 +103,7 @@ header {
 .socials__title {
   margin-right: 5px;
 }
+
 .socials__item:not(:last-child) {
   margin-right: 5px;
 }
@@ -97,6 +111,9 @@ header {
 .arrow__icon {
   fill: var(--main-color);
   stroke: var(--main-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
 
@@ -108,6 +125,9 @@ header {
 
 .nav__item {
   text-transform: uppercase;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
 
@@ -118,6 +138,7 @@ header {
 .nav__item--active {
   position: relative;
 }
+
 .nav__item--active::after {
   content: "";
   position: absolute;
@@ -128,6 +149,7 @@ header {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+
 .nav__item:hover,
 .nav__item:focus {
   color: var(--accent-color);
@@ -150,12 +172,17 @@ header {
 }
 
 .category__link {
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .category__link:hover,
 .category__link:focus {
   color: var(--accent-color);
 }
+
 .category__link:hover .arrow__icon,
 .category__link:focus .arrow__icon {
   fill: var(--accent-color);
@@ -163,13 +190,15 @@ header {
 
 .button--accent-color {
   border-radius: 3px;
-
   padding: 14px 46px;
   border: none;
   background-color: var(--accent-color);
   font-family: "Proxima Nova Bold";
   text-transform: uppercase;
   color: var(--white-color);
+  -o-transition: opacity var(--trans-duration) var(--timing-function);
+  -moz-transition: opacity var(--trans-duration) var(--timing-function);
+  -webkit-transition: opacity var(--trans-duration) var(--timing-function);
   transition: opacity var(--trans-duration) var(--timing-function);
 }
 
@@ -177,19 +206,29 @@ header {
 .button--accent-color:focus {
   opacity: 0.8;
 }
+
 .cart-btn {
   gap: 5px;
   padding: 10px 30px;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .shopping-cart__icon {
   fill: inherit;
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
+
 .cart-btn:hover,
 .cart-btn:focus {
   color: var(--accent-color);
 }
+
 .cart-btn:hover .shopping-cart__icon,
 .cart-btn:focus .shopping-cart__icon {
   fill: var(--accent-color);
@@ -224,6 +263,7 @@ header {
   font-size: 64px;
   line-height: 1;
 }
+
 .hero-slider__product-name {
   margin-bottom: 10px;
   font-size: 36px;
@@ -231,7 +271,6 @@ header {
 
 .hero-slider__text {
   margin-bottom: 30px;
-
   font-family: "Proxima Nova Regular";
   font-size: 36px;
   text-align: center;
@@ -240,6 +279,7 @@ header {
 .hero-slider .button--accent-color {
   margin-bottom: 50px;
 }
+
 .hero-slider .button--accent-color:hover,
 .hero-slider .button--accent-color:focus {
   color: var(--white-color);
@@ -249,6 +289,7 @@ header {
   margin-bottom: 5px;
   font-size: 24px;
 }
+
 .hero-slider__current {
   font-size: 36px;
 }
@@ -261,16 +302,17 @@ header {
   width: 30px;
   height: 30px;
   justify-content: center;
-
   border-radius: 50%;
   border-width: 1px;
   background-color: var(--white-color);
   transition: background-color var(--trans-duration) var(--timing-function);
 }
+
 .hero-slider__btn:hover,
 .hero-slider__btn:focus {
   background-color: var(--main-color);
 }
+
 .hero-slider__btn:hover .arrow__icon,
 .hero-slider__btn:focus .arrow__icon {
   fill: var(--white-color);
@@ -282,9 +324,9 @@ header {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .title__text {
   position: relative;
-
   font-family: "Proxima Nova Bold";
   font-size: 48px;
 }
@@ -304,40 +346,44 @@ header {
 
 .gallery {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .card {
   position: relative;
-
   cursor: pointer;
 }
 
 .card__overlay {
   position: absolute;
   padding: 30px;
-
   transform: translateY(-105px);
   transition: transform var(--trans-duration) var(--timing-function);
 }
+
 .card:hover .card__overlay,
 .card:focus .card__overlay {
   transform: translateY(-100%);
 }
+
 .card__title {
   font-family: "Proxima Nova Bold";
   font-size: 36px;
   color: var(--white-color);
   position: relative;
-
   display: inline-block;
 }
+
 .card__text {
   margin-top: 15px;
   font-size: 18px;
   color: transparent;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .card:hover .card__text,
 .card:focus .card__text {
   color: var(--white-color);
@@ -359,7 +405,6 @@ header {
 .benefits-slider__btn {
   position: absolute;
   top: 50%;
-
   width: 30px;
   height: 30px;
   justify-content: center;
@@ -370,23 +415,27 @@ header {
   background-color: transparent;
   fill: var(--white-color);
   stroke: var(--white-color);
-
   transition: background-color var(--trans-duration) var(--timing-function);
 }
+
 .benefits-slider__btn .arrow__icon {
   fill: var(--white-color);
   stroke: var(--white-color);
 }
+
 .benefits-slider__btn--left {
   left: 15px;
 }
+
 .benefits-slider__btn--right {
   right: 15px;
 }
+
 .benefits-slider__btn:hover,
 .benefits-slider__btn:focus {
   background-color: var(--white-color);
 }
+
 .benefits-slider__btn:hover .arrow__icon,
 .benefits-slider__btn:focus .arrow__icon {
   fill: var(--main-color);
@@ -397,24 +446,30 @@ header {
   justify-content: space-around;
   margin-bottom: 87px;
 }
+
 .cat__btn {
   flex-direction: column;
   background-color: #fff;
   border: none;
   fill: var(--main-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
+
 .cat__img {
   margin-bottom: 10px;
 }
+
 .cat__name {
   position: relative;
-
   text-transform: uppercase;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
   line-height: 1.25;
 }
+
 .cat__btn:hover,
 .cat__btn:focus {
   fill: var(--accent-color);
@@ -429,6 +484,9 @@ header {
   height: 3px;
   background-color: var(--accent-color);
   opacity: 0;
+  -o-transition: opacity var(--trans-duration) var(--timing-function);
+  -moz-transition: opacity var(--trans-duration) var(--timing-function);
+  -webkit-transition: opacity var(--trans-duration) var(--timing-function);
   transition: opacity var(--trans-duration) var(--timing-function);
 }
 
@@ -440,28 +498,30 @@ header {
 .promo-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  justify-content: space-between;
 }
+
 .promo-list__item {
   margin-bottom: 50px;
 }
+
 .product {
   display: block;
   position: relative;
-
   text-transform: uppercase;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
 }
+
 .product__title {
   padding: 15px;
   display: flex;
   justify-content: space-between;
-
   transition-property: background-color, color;
   transition-duration: var(--trans-duration);
   transition-timing-function: var(--timing-function);
 }
+
 .product:hover .product__title,
 .product:focus .product__title {
   color: var(--white-color);
@@ -471,34 +531,46 @@ header {
 .product__price--new {
   margin-right: 10px;
   color: var(--stock-color);
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .product__price--old {
   font-size: 18px;
   color: #bcbdbb;
   text-decoration: line-through;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .product:hover .product__price--new,
 .product:hover .product__price--old,
 .product:focus .product__price--new,
 .product:focus .product__price--old {
   color: var(--white-color);
 }
+
 .product__flag {
   position: absolute;
   padding: 5px 15px;
   color: var(--white-color);
   font-size: 18px;
 }
+
 .product__flag--hit {
   top: 10px;
   background-color: var(--main-color);
 }
+
 .product__flag--promo {
   top: 50px;
   background-color: var(--stock-color);
 }
+
 .to-catalog-btn {
   display: inline-block;
 }
@@ -507,9 +579,11 @@ header {
 .feedback__content {
   position: relative;
 }
+
 .about-us__img {
   margin-left: auto;
 }
+
 .furniture {
   position: absolute;
   top: 100px;
@@ -519,10 +593,12 @@ header {
   padding: 50px 30px 50px 50px;
   font-family: "Proxima Nova Regular";
 }
+
 .article__title {
   font-family: "Proxima Nova Bold";
   color: var(--accent-color);
 }
+
 .furniture p:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -537,16 +613,19 @@ header {
   padding: 50px 50px 50px 30px;
   font-family: "Proxima Nova Regular";
 }
+
 .form__title {
   font-family: "Proxima Nova Bold";
   font-size: 36px;
   margin-bottom: 30px;
 }
+
 .feedback__form form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form__input {
   width: 100%;
   padding: 14px 15px;
@@ -555,14 +634,20 @@ header {
   border: 1px solid #1e2e36;
   border-radius: 3px;
 }
+
 .form__submit-btn {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .feedback__phone {
   font-family: "Proxima Nova Bold";
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .feedback__phone:hover,
 .feedback__phone:focus {
   color: var(--accent-color);
@@ -572,20 +657,24 @@ footer {
   display: flex;
   position: relative;
 }
+
 .footer__logo {
   display: inline-block;
   margin-bottom: 50px;
 }
+
 .footer__sidebar {
   flex-grow: 1;
   background-color: var(--main-color);
   padding: 50px 50px 15px;
   color: var(--white-color);
 }
+
 .footer__nav-wriper {
   display: flex;
   gap: 87px;
 }
+
 .left-side__options {
   display: flex;
   gap: 55px;
@@ -599,8 +688,12 @@ footer {
   position: relative;
   margin-bottom: 15px;
   padding-left: 20px;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .footer__cat-item::before,
 .footer__nav-item::before {
   content: "";
@@ -612,6 +705,7 @@ footer {
   height: 2px;
   background-color: var(--accent-color);
 }
+
 .footer__cat-item:hover,
 .footer__nav-item:hover,
 .footer__cat-item:focus,
@@ -621,8 +715,12 @@ footer {
 
 .footer__icon {
   fill: var(--white-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
+
 .footer__map,
 .footer__schedule {
   display: flex;
@@ -630,26 +728,39 @@ footer {
   gap: 5px;
   margin-bottom: 15px;
 }
+
 .footer__map {
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .footer__phones {
   position: relative;
   margin-bottom: 30px;
 }
+
 .footer__phone-icon {
   position: absolute;
   left: -2px;
   fill: none;
   stroke: var(--white-color);
+  -o-transition: stroke var(--trans-duration) var(--timing-function);
+  -moz-transition: stroke var(--trans-duration) var(--timing-function);
+  -webkit-transition: stroke var(--trans-duration) var(--timing-function);
   transition: stroke var(--trans-duration) var(--timing-function);
 }
+
 .footer__phone-num {
   display: block;
   width: 170px;
   padding-left: 25px;
   margin-bottom: 5px;
   cursor: pointer;
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
 
@@ -659,21 +770,26 @@ footer {
 .footer__phone-num:focus {
   color: var(--accent-color);
 }
+
 .footer__map:hover .footer__map-icon,
 .footer__map:focus .footer__map-icon {
   fill: var(--accent-color);
 }
+
 .footer__phones:hover .footer__phone-icon,
 .footer__phones:focus .footer__phone-icon {
   stroke: var(--accent-color);
 }
+
 .footer__socials-title {
   margin-bottom: 5px;
 }
+
 .footer__socials-list {
   display: flex;
   gap: 5px;
 }
+
 .footer__socials-link {
   width: 40px;
   height: 40px;
@@ -681,10 +797,15 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .footer__socials-icon {
   fill: var(--white-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
+
 .footer__socials-link:hover .footer__socials-icon,
 .footer__socials-link:focus .footer__socials-icon {
   fill: var(--accent-color);
@@ -696,6 +817,7 @@ footer {
   font-size: 14px;
   line-height: 1.2;
 }
+
 .footer__copyright,
 .footer__made-of {
   font-size: 14px;
@@ -703,13 +825,18 @@ footer {
   position: absolute;
   bottom: 15px;
 }
+
 .footer__made-of {
   display: flex;
   align-items: center;
   gap: 3px;
   font-family: "Cuprum Regular";
+  -o-transition: color var(--trans-duration) var(--timing-function);
+  -moz-transition: color var(--trans-duration) var(--timing-function);
+  -webkit-transition: color var(--trans-duration) var(--timing-function);
   transition: color var(--trans-duration) var(--timing-function);
 }
+
 .footer__made-of:hover,
 .footer__made-of:focus {
   color: var(--accent-color);
@@ -725,20 +852,25 @@ footer {
   border-radius: 50%;
   background-color: transparent;
   transition: background-color var(--trans-duration) var(--timing-function);
-
   position: fixed;
   bottom: 480px;
   left: 36px;
   z-index: 5;
 }
+
 .up-btn:hover,
 .up-btn:focus {
   background-color: var(--accent-color);
 }
+
 .arrow-up__icon {
   fill: var(--accent-color);
+  -o-transition: fill var(--trans-duration) var(--timing-function);
+  -moz-transition: fill var(--trans-duration) var(--timing-function);
+  -webkit-transition: fill var(--trans-duration) var(--timing-function);
   transition: fill var(--trans-duration) var(--timing-function);
 }
+
 .up-btn:hover .arrow-up__icon,
 .up-btn:focus .arrow-up__icon {
   fill: var(--white-color);
